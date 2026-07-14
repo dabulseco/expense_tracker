@@ -1,0 +1,23 @@
+# Data files
+expenses.csv
+# Filtered exports
+*.csv
+!expenses.csv # Wait, actually we want to ignore ALL csvs if we are exporting them,
+              # but since the user specifically asked for expenses.csv, we'll just list it.
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
